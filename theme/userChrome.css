@@ -1,0 +1,9 @@
+:root{
+    --lwt-accent-color: rgb(25, 25, 25) !important;
+    --toolbar-field-background-color: rgb(25, 25, 25) !important;
+    --toolbar-bgcolor: rgb(35, 35, 35) !important;
+    --chrome-content-separator-color: rgb(35, 35, 35) !important;
+    --lwt-selected-tab-background-color: rgb(40, 40, 40) !important;
+    --button-hover-bgcolor: rgb(50, 50, 50) !important;
+    --toolbar-field-focus-background-color:rgb(50, 50, 50) !important;
+}
