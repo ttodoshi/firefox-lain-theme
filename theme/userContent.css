@@ -46,11 +46,7 @@
         display: flex !important;
         justify-content: center !important;
         flex-wrap: wrap !important;
-        width: 65% !important;
-    }	
-    .top-sites-list li{
-        width: 25% !important;
-    }
+	}
 
 	/* appearance of a separate shortcut */
 	.top-site-outer .context-menu-button {
@@ -87,8 +83,15 @@
         background: var(--card-op) !important;
     }
 
-	/* removed 4 shortcuts */
+	/* if u want default shortcuts view: delete this (86-96) */
+	/* only 4 shortcuts */
     .top-sites-list>li:nth-child(n + 5){
         display: none !important;
+    }
+	.top-sites-list{
+        width: 65% !important;
+    }	
+    .top-sites-list li{
+        width: 25% !important;
     }
 }
