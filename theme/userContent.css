@@ -2,6 +2,7 @@
 	:root {
 		--primary-color: #FFF !important;
 		--border-color: #000 !important;
+		/* u can set your own image */
 		--bg: url("./backround.jpg") !important;
 		--bg-op: rgba(0, 0, 0, .4) !important;
 		--card-op: rgba(0, 0, 0, .25) !important;
