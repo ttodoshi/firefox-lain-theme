@@ -84,15 +84,14 @@
         background: var(--card-op) !important;
     }
 
-	/* if u want default shortcuts view: delete this (86-96) */
-	/* only 4 shortcuts */
-    .top-sites-list>li:nth-child(n + 5){
+	/* if u want default shortcuts view: delete this (87-96) */
+	/* n + (number of shortcuts + 1) */
+    .top-sites-list>li:nth-child(n + 3){
         display: none !important;
     }
 	.top-sites-list{
-        width: 65% !important;
-    }	
-    .top-sites-list li{
-        width: 25% !important;
+		/* 100% / (number of shortcuts) * (number of shortcuts - 1) */
+		width: calc(100%/2*1) !important;
+		justify-content: space-between !important;
     }
 }
