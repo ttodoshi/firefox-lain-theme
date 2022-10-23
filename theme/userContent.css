@@ -95,3 +95,13 @@
 		justify-content: space-between !important;
     }
 }
+
+@-moz-document url("about:privatebrowsing") {
+    body {
+        background: url("./backround_private.jpg") !important;
+    }
+    .showPrivate {
+        display: none !important;
+    }
+}
+
