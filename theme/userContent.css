@@ -1,4 +1,6 @@
-@-moz-document url("about:newtab"), url("about:home") {
+/* HOME TAB */
+@-moz-document url("about:newtab"),
+url("about:home") {
 	:root {
 		--primary-color: #FFF !important;
 		--border-color: #000 !important;
@@ -9,7 +11,10 @@
 	}
 
 	/* remove logo and useless text */
-	.body-wrapper.on .discovery-stream:nth-child(2), .icon.icon-pin-small, .logo-and-wordmark, .fake-textbox {
+	.body-wrapper.on .discovery-stream:nth-child(2),
+	.icon.icon-pin-small,
+	.logo-and-wordmark,
+	.fake-textbox {
 		display: none !important;
 	}
 
@@ -21,6 +26,7 @@
 		width: 100% !important;
 		position: absolute !important;
 	}
+
 	.activity-stream {
 		background: no-repeat var(--bg) center !important;
 		background-size: 100% auto !important;
@@ -28,41 +34,47 @@
 	}
 
 	/* shortcuts appearance */
-	.top-sites .top-site-outer .top-site-inner > a:is(.active, :focus) .tile {
+	.top-sites .top-site-outer .top-site-inner>a:is(.active, :focus) .tile {
 		box-shadow: none !important;
 	}
+
 	.top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) {
 		background: transparent !important;
 	}
+
 	.top-sites-list:not(.dnd-active) .top-site-outer:is(:hover) .title span {
 		opacity: .7 !important;
 	}
 
 	/* shortcuts positions */
-	.collapsible-section>div:nth-child(2){
-        display: flex !important;
-        justify-content: center !important;
-    }
-    .top-sites-list{
-        display: flex !important;
-        justify-content: center !important;
-        flex-wrap: wrap !important;
+	.collapsible-section>div:nth-child(2) {
+		display: flex !important;
+		justify-content: center !important;
+	}
+
+	.top-sites-list {
+		display: flex !important;
+		justify-content: center !important;
+		flex-wrap: wrap !important;
 	}
 
 	/* appearance of a separate shortcut */
 	.top-site-outer .context-menu-button {
 		fill: var(--primary-color) !important;
 	}
+
 	.top-site-outer .context-menu-button:is(:active, :focus) {
 		background-color: transparent !important;
 		opacity: .3 !important;
 	}
+
 	.top-site-outer .title span {
 		color: #FFF !important;
 		font-size: 12pt !important;
 		font-weight: bold !important;
 		text-shadow: 0px 1px 2px rgba(0, 0, 0, .5) !important;
 	}
+
 	.top-site-outer .tile {
 		background-color: var(--card-op) !important;
 		backdrop-filter: blur(10px) !important;
@@ -80,28 +92,38 @@
 	}
 
 	/* dark search bar */
-	.search-handoff-button{
-        background: var(--card-op) !important;
-    }
+	.search-handoff-button {
+		background: var(--card-op) !important;
+	}
 
-	/* if u want default shortcuts view: delete this (87-96) */
+	/* if u want default shortcuts view: delete this (99-109) */
 	/* n + (number of shortcuts + 1) */
-    .top-sites-list>li:nth-child(n + 3){
-        display: none !important;
-    }
-	.top-sites-list{
+	.top-sites-list>li:nth-child(n + 5) {
+		display: none !important;
+	}
+
+	.top-sites-list {
 		/* 100% / (number of shortcuts) * (number of shortcuts - 1) */
-		width: calc(100%/2*1) !important;
+		width: calc(100%/4*3) !important;
 		justify-content: space-between !important;
-    }
+	}
+
+	/* if u haven't got shortcuts on start page at all: delete 99-109 strings and uncomment this */
+	/* main {
+		position: absolute;
+		left: 25%;
+		top: 40%;
+	} */
 }
 
+/* PRIVATE TAB */
 @-moz-document url("about:privatebrowsing") {
-    body {
-        background: url("./backround_private.jpg") !important;
-    }
-    .showPrivate {
-        display: none !important;
-    }
-}
+	body {
+		/* u can set your own image */
+		background: url("./backround_private.jpg") !important;
+	}
 
+	.showPrivate {
+		display: none !important;
+	}
+}
