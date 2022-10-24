@@ -4,8 +4,6 @@ url("about:home") {
 	:root {
 		--primary-color: #FFF !important;
 		--border-color: #000 !important;
-		/* u can set your own image */
-		--bg: url("./backround.jpg") !important;
 		--bg-op: rgba(0, 0, 0, .4) !important;
 		--card-op: rgba(0, 0, 0, .25) !important;
 	}
@@ -19,18 +17,9 @@ url("about:home") {
 	}
 
 	/* backround */
-	.activity-stream::before {
-		background: var(--bg-op) !important;
-		content: "" !important;
-		height: 100% !important;
-		width: 100% !important;
-		position: absolute !important;
-	}
-
-	.activity-stream {
-		background: no-repeat var(--bg) center !important;
-		background-size: 100% auto !important;
-		overflow: hidden !important;
+	body {
+		/* u can set your own image */
+		background: url("./backround.jpg") !important;
 	}
 
 	/* shortcuts appearance */
@@ -96,7 +85,7 @@ url("about:home") {
 		background: var(--card-op) !important;
 	}
 
-	/* if u want default shortcuts view: delete this (99-109) */
+	/* if u want default shortcuts view: delete this (88-98) */
 	/* n + (number of shortcuts + 1) */
 	.top-sites-list>li:nth-child(n + 5) {
 		display: none !important;
@@ -108,11 +97,11 @@ url("about:home") {
 		justify-content: space-between !important;
 	}
 
-	/* if u haven't got shortcuts on start page at all: delete 99-109 strings and uncomment this */
-	/* main {
-		position: absolute;
-		left: 25%;
-		top: 40%;
+	/* if u haven't got shortcuts on start page at all: delete 88-98 strings and uncomment this */
+	/* .ds-outer-wrapper-breakpoint-override {
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
 	} */
 }
 
