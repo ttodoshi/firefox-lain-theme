@@ -97,7 +97,7 @@ url("about:home") {
 		justify-content: space-between !important;
 	}
 
-	/* if u haven't got shortcuts on startpage at all: delete 99-109 strings and uncomment this */
+	/* if u haven't got shortcuts on start page at all: delete 88-98 strings and uncomment this */
 	/* .ds-outer-wrapper-breakpoint-override {
 		display: flex !important;
 		justify-content: center !important;
