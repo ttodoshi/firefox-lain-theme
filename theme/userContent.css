@@ -19,7 +19,9 @@ url("about:home") {
 	/* backround */
 	body {
 		/* u can set your own image */
-		background: url("./backround.jpg") !important;
+		background: no-repeat url("./backround.png") left bottom !important;
+		background-size: 25% auto !important;
+		overflow: hidden !important;
 	}
 
 	/* shortcuts appearance */
@@ -85,7 +87,7 @@ url("about:home") {
 		background: var(--card-op) !important;
 	}
 
-	/* if u want default shortcuts view: delete this (88-98) */
+	/* if u want default shortcuts view: delete this (90-100) */
 	/* n + (number of shortcuts + 1) */
 	.top-sites-list>li:nth-child(n + 5) {
 		display: none !important;
@@ -97,7 +99,7 @@ url("about:home") {
 		justify-content: space-between !important;
 	}
 
-	/* if u haven't got shortcuts on start page at all: delete 88-98 strings and uncomment this */
+	/* if u haven't got shortcuts on startpage at all: delete 90-100 strings and uncomment this */
 	/* .ds-outer-wrapper-breakpoint-override {
 		display: flex !important;
 		justify-content: center !important;
@@ -107,11 +109,16 @@ url("about:home") {
 
 /* PRIVATE TAB */
 @-moz-document url("about:privatebrowsing") {
+
+	/* backround */
 	body {
 		/* u can set your own image */
-		background: url("./backround_private.jpg") !important;
+		background: no-repeat url("./backround_private.png") left bottom !important;
+		background-size: 25% auto !important;
+		overflow: hidden !important;
 	}
 
+	/* remove all */
 	.showPrivate {
 		display: none !important;
 	}
