@@ -67,8 +67,15 @@ url("about:home") {
 	}
 
 	.top-site-outer .tile {
-		background-color: var(--card-op) !important;
-		backdrop-filter: blur(10px) !important;
+		background-color: var(--toolbar-field-background-color) !important;
+	}
+
+	.top-site-outer .icon-wrapper {
+		background-color: var(--toolbar-field-background-color) !important;
+	}
+
+	.top-site-outer .icon-wrapper .top-site-icon {
+		background-color: var(--toolbar-field-background-color) !important;
 	}
 
 	/* white icons */
@@ -87,24 +94,11 @@ url("about:home") {
 		background: var(--card-op) !important;
 	}
 
-	/* if u want default shortcuts view: delete this (90-100) */
-	/* n + (number of shortcuts + 1) */
-	.top-sites-list>li:nth-child(n + 5) {
-		display: none !important;
-	}
-
-	.top-sites-list {
-		/* 100% / (number of shortcuts) * (number of shortcuts - 1) */
-		width: calc(100%/4*3) !important;
-		justify-content: space-between !important;
-	}
-
-	/* if u haven't got shortcuts on startpage at all: delete 90-100 strings and uncomment this */
-	/* .ds-outer-wrapper-breakpoint-override {
+	.ds-outer-wrapper-breakpoint-override {
 		display: flex !important;
 		justify-content: center !important;
 		align-items: center !important;
-	} */
+	}
 }
 
 /* PRIVATE TAB */

@@ -7,3 +7,8 @@
     --button-hover-bgcolor: rgb(50, 50, 50) !important;
     --toolbar-field-focus-background-color: rgb(50, 50, 50) !important;
 }
+
+.tab-background[selected="true"] {
+    background-color: rgb(65, 65, 65) !important;
+    background-image: none !important;
+}
